@@ -1,0 +1,167 @@
+/*     border-color: rgba(1, 234, 255, 0.5) transparent transparent transparent;
+ */
+*
+{
+    padding: 0;
+    margin: 0;
+    left: 0;
+    box-sizing: border-box;
+    outline: 0;
+    scroll-behavior: smooth;
+    
+}
+@font-face
+{
+    font-family: hesham;
+    src: url();
+}
+body
+{
+    height: 2000px;
+}
+
+
+
+.nav1
+{
+    width: 100%;
+    height: 100vh;
+    background: #f0f;
+}
+.nav2
+{
+    width: 100%;
+    height: 100vh;
+    background: rgb(242, 255, 0);
+}.nav3
+{
+    width: 100%;
+    height: 100vh;
+    background: rgb(30, 0, 255);
+}
+ 
+.out-top
+{
+    
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    right: 50px;
+    background: rgba(203, 161, 53);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 20px;
+    animation-name: test;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    display:none;
+    transition: 1.5s;
+}
+@keyframes test{
+    0%{
+bottom:  50px;
+    }
+    100%{
+     bottom:70px ;
+    }
+}
+.out-top:hover
+{
+    transition: 1s;
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+.out-top a {
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+
+ 
+.loding-screen
+{
+width: 100%;
+height: 100vh;
+background: rgba(0, 0, 0, 0.5);
+position: fixed;
+left: 0;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: rgb(0, 0, 0);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: rgb(0, 0, 0);
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  
+  @media (max-width:991px)
+  {
+  .out-top
+  {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    bottom: 100px;
+    right: 100px;
+  }
+
+}
